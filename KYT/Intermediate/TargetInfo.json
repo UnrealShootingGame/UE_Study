@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UE5Coop",
+			"Path": "C:\\UE_5.1\\UE_Study\\KYT\\Source\\UE5Coop.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UE5CoopEditor",
+			"Path": "C:\\UE_5.1\\UE_Study\\KYT\\Source\\UE5CoopEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UE_5.1\\UE_Study\\KYT\\Source\\UE5Coop\\UE5Coop.Build.cs",
+		"C:\\UE_5.1\\UE_Study\\KYT\\Source\\UE5Coop.Target.cs",
+		"C:\\UE_5.1\\UE_Study\\KYT\\Source\\UE5CoopEditor.Target.cs"
+	],
+	"EngineVersion": "5.1.0"
+}

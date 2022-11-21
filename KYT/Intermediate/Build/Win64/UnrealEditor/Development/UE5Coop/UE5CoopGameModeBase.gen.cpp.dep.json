@@ -1,0 +1,19 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\ue_5.1\\ue_study\\kyt\\intermediate\\build\\win64\\unrealeditor\\inc\\ue5coop\\uht\\ue5coopgamemodebase.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\ue_5.1\\ue_study\\kyt\\intermediate\\build\\win64\\ue5coopeditor\\development\\engine\\sharedpch.engine.shadowerrors.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\ue_5.1\\ue_study\\kyt\\intermediate\\build\\win64\\unrealeditor\\development\\ue5coop\\definitions.ue5coop.h",
+            "c:\\ue_5.1\\ue_study\\kyt\\source\\ue5coop\\ue5coopgamemodebase.h",
+            "c:\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\ue_5.1\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\ue_5.1\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\ue_5.1\\ue_study\\kyt\\intermediate\\build\\win64\\unrealeditor\\inc\\ue5coop\\uht\\ue5coopgamemodebase.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
