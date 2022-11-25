@@ -1,5 +1,7 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
 #include "ShooterCharacter.h"
-#include "GhostTail.h"
 
 // Sets default values
 AShooterCharacter::AShooterCharacter()
@@ -11,8 +13,9 @@ AShooterCharacter::AShooterCharacter()
 	if (mm.Succeeded())
 	{
 		GetMesh()->SetSkeletalMesh(mm.Object);
+		CharacterSkeletalMesh = mm.Object;
 		
-		//UE_LOG(LogTemp, Display, TEXT("!!"));
+		UE_LOG(LogTemp, Display, TEXT("%s"),*GetMesh()->GetSkeletalMeshAsset()->GetName());
 	}
 }
 
@@ -22,9 +25,9 @@ void AShooterCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	DashCount = MaxDashCount;
-
+	UE_LOG(LogTemp, Display, TEXT("%s"), *GetMesh()->GetSkeletalMeshAsset()->GetName());
 	
-	
+	GetMesh()->SetSkeletalMesh(CharacterSkeletalMesh);
 }
 
 // Called every frame
@@ -90,19 +93,17 @@ void AShooterCharacter::Dash()
 	if (DashCount > 0)
 	{
 		//CharacterGhostTail->Init(CharacterMesh);
-
+		
 		const FVector ForwardDir = GetActorRotation().Vector();
 		LaunchCharacter(ForwardDir * DashDistance, true, true);
 		DashCount--;
 
 		GetWorldTimerManager().SetTimer(DashTimerHandle, this, &AShooterCharacter::AddDashCount, DashCoolTime, false);
-	
+
 		UE_LOG(LogTemp, Display, TEXT("Dash"));
 	}
 	else
 	{
-		
+
 	}
 }
-
-
